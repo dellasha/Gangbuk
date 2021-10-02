@@ -11,9 +11,12 @@
   header:hover{ background-color: #fff;}
   header:hover h1{ 
     background: url(../img/logo.png)no-repeat; }
+    
   header:hover a { color: #666;}
+  
   header:hover .nav_span a span {
-    background-color: #666; }
+    background-color: #666; } 
+   
   header h1{
   margin-left: 20px;
   margin-top: 20px;
@@ -40,12 +43,33 @@
     display: block; width: 30px; height: 3px;
     background-color: #fff; margin-bottom: 5px; font-size: 0;
   transition: all 0.3s;}
-  .nav_span a span.nav_span1 { 
+
+  
+   .nav_span a span.nav_span1 { 
     display: block; 
-    width: 20px;}
+    width: 20px;} 
+   
 
   .nav_span:hover a span{
     width: 30px; }
+
+  /* nav 만들기 */
+
+  /* .open1{display: block; width: 30px; position: absolute; top: 30px; left: 30px;}
+  .open1 span, .open1::before, .open1::after{display: block; height: 4px; background-color: #555;}
+  .open1::before, .open1::after{content: "";
+  display: block; width: 30px; height: 3px; background-color: #fff;}
+
+  .open1 span{margin: 4px 0; font-size: 0; color: transparent;}
+
+  .rightWrap{width: 300px; height: 100%; 
+    position: fixed; top: 0; right: -300px; background-color: teal;}
+  .close1{position: absolute; top: 20px; right: 20px; width: 30px; height: 30px;
+  background-color: #fff; border-radius: 50%; font-size: 0; color: transparent;}
+  .close1::after{content: "X"; font-size: 18px; color: #000; line-height: 30px; 
+  display: block; text-align: center; font-weight: bold;} */
+
+  /* nav 끝 */
 
   .visual {position: relative; }
   .vis_txt{
@@ -356,7 +380,78 @@ background: url(../img/icon_call.png)no-repeat center left;
   color: #808080;
 }
 
+/* 수정 해보자 */
+.sect04{
+  height: 655px;
+  background: url(../img/main_bg01.jpg)no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 100px;
+  position: relative;
 
+}
+.cont4{
+  width: 1400px;
+  margin: 0 auto;
+}
+.cont4_h2{
+padding-top: 50px;
+padding-bottom: 50px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 35px;
+  text-align: center;
+  line-height: 1;
+}
+
+.cont4 ul{
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+}
+.cont4 ul li{
+  display: inline-block;
+  padding: 0 50px;
+  height: 260px;
+  border-right: 1px solid #5b5c5c;
+  /* background-color: red; */
+}
+.cont4 ul li:nth-child(1){
+  background: url(../img/main_icon05.png)no-repeat center bottom;
+}
+.cont4 ul li:nth-child(2){
+  background: url(../img/main_icon06.png)no-repeat center bottom;
+}
+.cont4 ul li:nth-child(3){
+  background: url(../img/main_icon07.png)no-repeat center bottom;
+}
+.cont4 ul li:nth-child(4){
+  background: url(../img/main_icon08.png)no-repeat center bottom;
+}
+.con4_tit{
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 400;
+}
+.cont4_nb{
+  font-size: 80px;
+  color: #7bdbff;
+  margin-top: 10px;
+}
+
+.sect04.on > div{
+  top: 50%;
+  opacity: 1; 
+}
+.sect04 > div{
+  position: absolute;
+  top:70%; left: 50%; transform: translate(-50%,-50%);
+  opacity: 0;
+  transition: all 1s;
+}
 
 
 

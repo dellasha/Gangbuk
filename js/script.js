@@ -18,6 +18,24 @@ $(document).ready(function(){ //시작
   });
 
 
+  $(window).scroll(function(){
+    var location = $(window).scrollTop();
+    if(location >= $(".sect04").offset().top){
+      $(".sect04").addClass("on");
+    }
+  });
+
+
+  
+  // $(".nav_span a").click(function(){
+  //   $(".rightWrap").animate({right:0},500,"swing")	
+  //   })
+    
+  //   $(".close1").click(function(){
+  //     $(".rightWrap").animate({right:-300},500,"swing")	
+  //   })
+
+
 
 
 });//끝
